@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "423443101636",
+    "firebase_url": "https://adisyonapp.firebaseio.com",
+    "project_id": "adisyonapp",
+    "storage_bucket": "adisyonapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423443101636:android:5584741591b3a7fa",
+        "android_client_info": {
+          "package_name": "com.example.adisyon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423443101636-9ep80s8dudlt3pp6fdreap8bh40iebfv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adisyon",
+            "certificate_hash": "5ae63e1f42197b4657709ea10aadd4ded662063e"
+          }
+        },
+        {
+          "client_id": "423443101636-tgr4atu5ndne3ee18gu3chb0itv25ai5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALBdgvc7WPDF-4CRox0wSEf3XEms99X6I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "423443101636-tgr4atu5ndne3ee18gu3chb0itv25ai5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
