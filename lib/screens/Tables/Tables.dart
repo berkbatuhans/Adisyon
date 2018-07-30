@@ -2,7 +2,7 @@ import 'package:adisyon/models/table.dart';
 import 'package:adisyon/screens/Order/Order.dart';
 import 'package:adisyon/utils/routes.dart';
 import 'package:flutter/material.dart';
-import 'package:adisyon/enums/Enum.dart';
+import 'package:adisyon/utils/enums/Enum.dart';
 
 class TableWidget extends StatefulWidget {
   final Color setColor;

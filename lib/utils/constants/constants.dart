@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:adisyon/enums/Enum.dart';
+import 'package:adisyon/utils/enums/Enum.dart';
 import 'package:adisyon/models/category.dart';
 import 'package:adisyon/models/table.dart';
 

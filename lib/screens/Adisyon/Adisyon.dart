@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:adisyon/auth.dart';
-import 'package:adisyon/constants/constants.dart';
+import 'package:adisyon/utils/constants/constants.dart';
 import 'package:adisyon/models/restaurantarea.dart';
 import 'package:adisyon/screens/Tables/Tables.dart';
 import 'package:adisyon/services/api.dart';
@@ -11,7 +11,6 @@ class Adisyon extends StatefulWidget {
   Adisyon({Key key, this.auth, this.onSignedOut}) : super(key: key);
   final BaseAuth auth;
   final VoidCallback onSignedOut;
-  Text title;
   @override
   _AdisyonState createState() => _AdisyonState();
 }
@@ -21,16 +20,18 @@ class _AdisyonState extends State<Adisyon> with TickerProviderStateMixin {
   TabController _controller;
   List<RestaurantArea> _restaurantArea;
   AdisyonApi _api;
+  Text _title;
   bool _loadingInProgress;
   void title() async {
     widget.auth.currentUser().then((userId) {
-      widget.title = new Text(userId);
+      _title = new Text(userId);
     });
   }
 
   void _signOut() async {
     try {
       await widget.auth.signOut();
+
       widget.onSignedOut();
     } catch (e) {
       print(e);
@@ -39,7 +40,7 @@ class _AdisyonState extends State<Adisyon> with TickerProviderStateMixin {
 
   _getAppBar() {
     return new AppBar(
-      title: widget.title ?? new Text("Adisyon"),
+      title: _title ?? new Text("Adisyon"),
       bottom: new TabBar(
         isScrollable: true,
         controller: _controller,
@@ -100,10 +101,11 @@ class _AdisyonState extends State<Adisyon> with TickerProviderStateMixin {
     }
   }
 
-  Future<Null> _handleRefresh() async {
+  //TODO Yenileme Fonksiyonu
+  /*Future<Null> _handleRefresh() async {
     _reloadTables();
     return new Future<Null>.value();
-  }
+  }*/
 
   @override
   void initState() {

@@ -1,4 +1,4 @@
-import 'package:adisyon/constants/constants.dart';
+import 'package:adisyon/utils/constants/constants.dart';
 import 'package:adisyon/models/category.dart';
 import 'package:adisyon/models/choice.dart';
 import 'package:flutter/material.dart';
@@ -51,7 +51,6 @@ class _OrderState extends State<Order> with SingleTickerProviderStateMixin {
   }
 
   _gridCategories() {
-    Constants category = Constants();
     return GridView.count(
       crossAxisCount: 3,
       childAspectRatio: 3.0,

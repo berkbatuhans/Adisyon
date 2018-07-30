@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:adisyon/models/restaurantarea.dart';
 import 'package:adisyon/models/table.dart';
-import 'package:adisyon/enums/Enum.dart';
+import 'package:adisyon/utils/enums/Enum.dart';
 import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';

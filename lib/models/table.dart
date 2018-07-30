@@ -1,4 +1,4 @@
-import 'package:adisyon/enums/Enum.dart';
+import 'package:adisyon/utils/enums/Enum.dart';
 import 'package:meta/meta.dart';
 
 class Tables {

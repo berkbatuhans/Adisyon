@@ -19,10 +19,14 @@ class _RootPageState extends State<RootPage> {
   void initState() {
     super.initState();
     widget.auth.currentUser().then((userId) {
+      print("UserId = $userId");
       setState(() {
         authStatus =
             userId == null ? AuthStatus.notSignedIn : AuthStatus.signedIn;
+            print(authStatus.toString());
       });
+    }).catchError((error){
+      print("CurrentInıtError : ${error.toString()}");
     });
   }
 
