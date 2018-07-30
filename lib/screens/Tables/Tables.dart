@@ -1,5 +1,5 @@
 import 'package:adisyon/models/table.dart';
-import 'package:adisyon/pages/Order/Order.dart';
+import 'package:adisyon/screens/Order/Order.dart';
 import 'package:adisyon/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:adisyon/enums/Enum.dart';

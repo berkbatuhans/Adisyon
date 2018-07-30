@@ -1,5 +1,4 @@
 import 'package:adisyon/constants/constants.dart';
-import 'package:adisyon/constants/customcolor.dart';
 import 'package:adisyon/models/category.dart';
 import 'package:adisyon/models/choice.dart';
 import 'package:flutter/material.dart';
